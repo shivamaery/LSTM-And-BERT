@@ -8,8 +8,6 @@ A comprehensive study comparing **custom-built sequential models** with **modern
 
 **Dataset:** Web of Science (WOS11967) — 11,967 research papers with 2-level hierarchical labels (7 domains × 33 sub-fields)
 
----
-
 ## My Specific Contributions
 
 - **Custom LSTM Implementation:** Developed a complete LSTM architecture from scratch using PyTorch tensors. This included the manual definition of input, forget, and output gates, cell state updates, and orthogonal weight initialization.
@@ -17,11 +15,7 @@ A comprehensive study comparing **custom-built sequential models** with **modern
 - **Comparative Evaluation Suite:** Developed a systematic benchmarking method using Pandas to compare LSTM and BERT across four key metrics: Accuracy and Macro F1-score for both hierarchical levels. I utilized Pandas styling to highlight top-performing models across metrics.
 - **Automated Hyperparameter Tuning:** Integrated **Optuna** to conduct a Bayesian search for the LSTM, optimizing the hidden size, learning rate, and batch size to maximize the macro-averaged F1 score.
 
----
-
 Based on the implementations above, the following insights and analyses were derived:
-
----
 
 ## Key Achievements
 
@@ -55,8 +49,6 @@ Based on the implementations above, the following insights and analyses were der
 2. **Class Imbalance Impact:** Weighted loss functions critical for balanced performance across 33 sub-field classes
 3. **Attention Insights:** BERT concentrates attention on domain-specific terminology, validating learned representations
 
----
-
 ## Technical Stack
 
 - **Deep Learning Framework:** PyTorch
@@ -65,8 +57,6 @@ Based on the implementations above, the following insights and analyses were der
 - **Data Processing:** Pandas, NumPy, scikit-learn
 - **Visualization:** Matplotlib, Seaborn
 - **Metrics:** scikit-learn's accuracy, F1-score, class weight computation
-
----
 
 ## Project Structure
 
@@ -100,7 +90,5 @@ Applied t-SNE dimensionality reduction to compare the learned feature representa
 
 ![t-SNE Feature Space](./images/tsne_comparison.png)
 *2D projection of model representations colored by sub-field labels (33 classes)*
-
----
 
 
